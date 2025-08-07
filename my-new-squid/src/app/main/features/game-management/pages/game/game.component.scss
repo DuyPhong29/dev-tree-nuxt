@@ -1,0 +1,27 @@
+.game-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  background: linear-gradient(to right, #0052D4, #65C7F7);
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  padding: 12px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

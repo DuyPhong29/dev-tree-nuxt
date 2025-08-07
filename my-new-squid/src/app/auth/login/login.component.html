@@ -1,0 +1,47 @@
+<div class="login-container">
+  <mat-card class="login-card">
+    <h2 class="title">DX Login</h2>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+      <!-- Username -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Username</mat-label>
+        <input matInput formControlName="username" placeholder="Enter Username or Email" required />
+      </mat-form-field>
+
+      <!-- Password -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password" placeholder="Enter Password" required />
+      </mat-form-field>
+
+      <!-- Login Button -->
+      <button mat-flat-button color="primary" class="login-btn" type="submit" [disabled]="loginForm.invalid">
+        Login
+      </button>
+
+      <!-- Forgot Password -->
+      <p class="forgot-password">
+        <a href="#">Forgot password?</a>
+      </p>
+    </form>
+
+    <!-- Signup Section -->
+    <p class="new-user">New user?</p>
+    <button mat-stroked-button color="primary" class="signup-btn">Signup Now</button>
+
+    <!-- Social Media Signup -->
+    <p class="signup-with">May also signup with</p>
+    <div class="social-icons">
+      <button mat-icon-button>
+        <mat-icon svgIcon="facebook"></mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon svgIcon="twitter"></mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon svgIcon="linkedin"></mat-icon>
+      </button>
+    </div>
+  </mat-card>
+</div>

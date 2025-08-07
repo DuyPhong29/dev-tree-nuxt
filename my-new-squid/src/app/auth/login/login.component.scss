@@ -1,0 +1,57 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  padding: 8px;
+
+  .login-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+    .title {
+      margin-bottom: 20px;
+    }
+
+    .full-width {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .login-btn {
+      width: 100%;
+      background: linear-gradient(to right, #0052d4, #65c7f7);
+      color: white;
+    }
+
+    .forgot-password {
+      margin-top: 10px;
+      font-size: 14px;
+      color: blue;
+    }
+
+    .new-user {
+      margin-top: 15px;
+    }
+
+    .signup-btn {
+      width: 100%;
+    }
+
+    .signup-with {
+      margin-top: 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+}
